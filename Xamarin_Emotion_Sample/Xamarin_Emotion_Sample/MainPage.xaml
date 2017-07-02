@@ -11,7 +11,7 @@
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <Image x:Name="ImagePreview" Grid.Row="0"/>
-        <Button Text="写真を撮影する" Grid.Row="1" Clicked="Button_OnClicked"/>
+        <Button Text="解析" Grid.Row="1" Clicked="Button_OnClicked"/>
         <StackLayout HorizontalOptions="Center" Grid.Row="2">
             <Label x:Name="Anger">怒り</Label>
             <Label x:Name="Contempt">軽蔑</Label>
