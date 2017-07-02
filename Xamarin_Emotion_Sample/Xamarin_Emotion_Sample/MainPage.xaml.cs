@@ -57,7 +57,7 @@ namespace Xamarin_Emotion_Sample
             }
 
             // 表示するためにビューにセットしていく
-            Anger.Text = "恐れ: " + Math.Round(emotionResult.Anger, 6).ToString("0.000000");
+            Anger.Text = "怒り: " + Math.Round(emotionResult.Anger, 6).ToString("0.000000");
             Contempt.Text = "軽蔑: " + Math.Round(emotionResult.Contempt, 6).ToString("0.000000");
             Disgust.Text = "むかつき: " + Math.Round(emotionResult.Disgust, 6).ToString("0.000000");
             Fear.Text = "恐れ: " + Math.Round(emotionResult.Fear, 6).ToString("0.000000");
