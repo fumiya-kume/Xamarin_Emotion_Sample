@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Xamarin_Emotion_Sample"
+             x:Class="Xamarin_Emotion_Sample.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image x:Name="ImagePreview" Grid.Row="0"/>
+        <Button Text="写真を撮影する" Grid.Row="1" Clicked="Button_OnClicked"/>
+        <StackLayout HorizontalOptions="Center" Grid.Row="2">
+            <Label x:Name="Anger">怒り</Label>
+            <Label x:Name="Contempt">軽蔑</Label>
+            <Label x:Name="Disgust">むかつき</Label>
+            <Label x:Name="Fear">恐れ</Label>
+            <Label x:Name="Happiness">喜び</Label>
+            <Label x:Name="Neutral">無表情</Label>
+            <Label x:Name="Sadness">悲しみ</Label>
+            <Label x:Name="Surprise">驚き</Label>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
