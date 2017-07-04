@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="kuxu.nagoya.FaceEmotionAnalyzer" android:versionCode="2">
 	<uses-sdk android:minSdkVersion="15" />
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.CAMERA" />
 	<uses-permission android:name="android.permission.INTERNET" />
-	<application android:label="FaceEmotionAnalyzer"></application>
+	<application android:label="FaceEmotionAnalyzer" android:icon="@drawable/icon"></application>
+	<provider android:name="android.support.v4.content.FileProvider" android:authorities="kuxu.nagoya.FaceEmotionAnalyzer.fileprovider" android:exported="false" android:grantUriPermissions="true">
+		<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
+	</provider>
 </manifest>
